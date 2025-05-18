@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_beige">#F1EFEC</color>
+    <color name="soft_brown">#D4C9BE</color>
+    <color name="deep_red">#123458</color>
+    <color name="dark_brown">#030303</color>
+    <color name="light_gray">#D3D3D3</color> <!-- Világos szürke -->
+    <color name="dusty_pink">#D8A8A2</color> <!-- Poros rózsaszín -->
+    <color name="soft_green">#A3C9A8</color> <!-- Lágy zöld -->
+    <color name="light_olive">#B4B880</color> <!-- Világos olíva -->
+    <color name="cool_gray">#8C8C8C</color> <!-- Hűvös szürke -->
+    <color name="pastel_purple">#B8A7D2</color> <!-- Pasztell lila -->
+    <color name="dark_beige">#C2A68D</color> <!-- Sötét bézs -->
+    <color name="muted_red">#9F4B3F</color> <!-- Halvány piros -->
+    <color name="stone_gray">#B4B4B4</color> <!-- Kő szürke -->
+    <color name="soft_yellow">#F5D56A</color>
+    <color name="purple_500" /> <!-- Lágy sárga -->
+</resources>

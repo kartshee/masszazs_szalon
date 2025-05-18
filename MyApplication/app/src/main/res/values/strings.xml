@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="regiszt">Regisztráció</string>
+    <string name="email_cim">Email cim</string>
+    <string name="jelszoujra">Jelszó újra</string>
+    <string name="cancel">Mégse</string>
+    <string name="phone">Telefonszám</string>
+    <string name="adress">Lakcím</string>
+    <string name="loginasguest">Bejelentekezés vendégként</string>
+    <string name="loginwgoogle">Bejelentkezés google fiókkal</string>
+    <string name="exit">Kilépés</string>
+    <string-array name="phone_modes">
+        <item>Otthoni</item>
+        <item>Munkai</item>
+        <item>Mobil</item>
+        <item>Egyéb</item>
+    </string-array>
+</resources>

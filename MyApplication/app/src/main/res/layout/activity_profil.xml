@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bejelentkezve:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/szoveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foglalások:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333" />
+
+    <ListView
+        android:id="@+id/appointmentsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

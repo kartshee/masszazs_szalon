@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Regisztráció szöveg -->
+
+    <!-- Felhasználónév mező -->
+    <TextView
+        android:id="@+id/regiszttext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:textColor="#000000"
+        android:text="@string/regiszt"
+        android:textAlignment="center"
+        android:background="#E0F7FA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordUjra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/jelszoujra"
+        android:background="#E0F7FA"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#000"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E0F7FA"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordUjra" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adress">
+
+        <!-- Regisztráció gomb -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:onClick="register"
+            android:text="@string/regiszt"
+            android:textColor="@android:color/white" />
+
+        <!-- Mégse gomb -->
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:onClick="cancel"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/phoneSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#E0F7FA"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/phoneEditText" />
+
+    <EditText
+        android:id="@+id/adress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E0F7FA"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/adress"
+        android:textColorHint="#000000"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:maxLines="3"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneSpinner" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:background="#E0F7FA"
+        android:textColorHint="#000"
+        android:textColor="#000000"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userEmail" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:background="#E0F7FA"
+        android:textColorHint="#000"
+        android:hint="@string/email_cim"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameedittext" />
+
+    <EditText
+        android:id="@+id/usernameedittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#000"
+        android:layout_marginTop="16dp"
+        android:background="#E0F7FA"
+        android:textColor="#000000"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/regiszttext" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
